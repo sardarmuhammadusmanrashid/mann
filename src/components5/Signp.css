@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --black:#000;
+    --grey700:#333333;
+    --grey500:#6D6E72;
+    --darkBlue:#1C1464;
+    --cyan:#00FFFF;
+  }
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.site-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.main_bg{
+    background: url('./main_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.top-navigation{
+    padding-bottom: 3rem;
+}
+.top-navigation .logo{
+    width: 300px;
+}
+.top-navigation nav{
+    gap: 3.5rem;
+}.top-navigation nav ul {
+    gap: 3.5rem;
+}
+.top-navigation nav ul li {
+    list-style: none;
+}
+.top-navigation nav ul li a {
+    color: var(--grey500);
+    font-weight:600;
+    font-size: 1.5625rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: all ease-in-out .5s;
+}.top-navigation nav ul li a:hover {
+    box-shadow: 5px 2px 12px 1px rgb(0 0 0 / 10%);
+    background: #e2e5ea;
+}.top-navigation nav i {
+    font-weight:600;
+    font-size: 1.5625rem;
+    color: var(--grey500);
+}
+.auth-wrapper .welcome h1{
+    color: var(--darkBlue);
+    font-size: 6.0625rem;
+    font-weight: 900;
+}.auth-wrapper .welcome p{
+    color: var(--black);
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.auth-wrapper .sign-in h2{
+    font-size: 3.985rem;
+    font-weight: 700;
+}.auth-wrapper .sign-in h3 a{
+    font-size: 2.56rem;
+    font-weight: 500;
+    color: var(--darkBlue);
+}
+.auth-wrapper .sign-in > .d-flex.justify-content-end > a{
+    font-size: 1.25rem;
+    color: var(--grey700);
+    font-weight: 600;
+    font-style: italic;
+}.auth-wrapper .sign-in h3 span{
+    font-weight: 700;
+}.auth-wrapper .sign-in .form-check label{
+    color: var(--grey700);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.auth-wrapper .sign-in .form-check input{
+    border-color: var(--cyan);
+    height: 25px;
+    width: 25px;
+    border-width:2px;
+    background: transparent;
+}
+.input-rounded{
+    border-radius: 2rem;
+    height: 4rem;
+    border: 2px solid var(--cyan);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--grey700);
+    font-size: 1.75rem;
+}
+.pharmacy-signup .sign-in input{
+    border: 2px solid var(--cyan);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--grey700);
+    font-size: 1.75rem;
+    border-radius: 0px;
+}
+.pharmacy-signup h1 {
+    font-size: 3.875rem;
+    color: var(--darkBlue);
+    font-weight: 600;
+}.pharmacy-signup h1 span{
+    font-size: 4.75rem;
+    font-weight: 900;
+}.pharmacy-signup h2 {
+    font-size: 3.875rem;
+    color: #04635A;
+    font-weight: 600;
+}.pharmacy-signup h2 span{
+    font-size: 4.75rem;
+    font-weight: 900;
+}
+.pharmacy-desc{
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.btn-rounded{
+    background: rgb(0,211,182);
+    background: linear-gradient(90deg, rgba(0,211,182,1) 0%, rgba(0,193,203,1) 100%);
+    border-radius: 40px;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: none;
+}
+a.btn-rounded{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-rounded:hover{
+    color: white;    
+}
+.btnsm{
+    font-size: 1.5125rem;
+    font-weight: 600;
+}
+.btnlg{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.btnShadow{
+    box-shadow: 8px 9px 14px 2px rgb(0 208 185 / 37%);
+}

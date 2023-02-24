@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --black:#000;
+    --grey700:#333333;
+    --grey500:#6D6E72;
+    --darkBlue:#1C1464;
+    --cyan:#00FFFF;
+    --blue:#0907da;
+  }
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.site-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.main_bg{
+    background: url('../img/main_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    /* height: 100vh; */
+}
+/* .main_bg.pharmacy-signup-bg{
+    height: auto;
+    padding-bottom: 20px;
+} */
+ul,li,p,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.chx-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+ .chx-box input {
+    padding: 0;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+   .chx-box label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+   .chx-box label:before {
+    content:'';
+    
+    background-color: transparent;
+    border: 2px solid #000000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+   .chx-box input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+.top-navigation{
+    padding-bottom: 3rem;
+}
+.top-navigation .logo{
+    width: 300px;
+}
+.top-navigation nav{
+    gap: 3.5rem;
+}.top-navigation nav ul {
+    gap: 3.5rem;
+}
+.top-navigation nav ul li {
+    list-style: none;
+}
+.top-navigation nav ul li a {
+    color: var(--grey500);
+    font-weight:600;
+    font-size: 1.5625rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: all ease-in-out .5s;
+}.top-navigation nav ul li a:hover {
+    box-shadow: 5px 2px 12px 1px rgb(0 0 0 / 10%);
+    background: #e2e5ea;
+}.top-navigation nav i {
+    font-weight:600;
+    font-size: 1.5625rem;
+    color: var(--grey500);
+}
+.auth-wrapper .welcome h1{
+    color: var(--darkBlue);
+    font-size: 6.0625rem;
+    font-weight: 900;
+}.auth-wrapper .welcome p{
+    color: var(--black);
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.auth-wrapper .sign-in h2{
+    font-size: 3.985rem;
+    font-weight: 700;
+}.auth-wrapper .sign-in h3 a{
+    font-size: 2.56rem;
+    font-weight: 500;
+    color: var(--darkBlue);
+}
+.auth-wrapper .sign-in > .d-flex.justify-content-end > a{
+    font-size: 1.25rem;
+    color: var(--grey700);
+    font-weight: 600;
+    font-style: italic;
+}.auth-wrapper .sign-in h3 span{
+    font-weight: 700;
+}.auth-wrapper .sign-in .chx-box label{
+    color: var(--grey700);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.auth-wrapper .sign-in .chx-box label:before {
+    border: 2px solid var(--cyan);
+    background: #b8b8b8;
+  }
+.auth-wrapper .sign-in .chx-box input:checked + label:after {
+    top: 7px;
+    border: solid var(--cyan);
+    border-width: 0 2px 2px 0;
+}
+.auth-wrapper .sign-in .form-check input{
+    border-color: var(--cyan);
+    height: 25px;
+    width: 25px;
+    border-width:2px;
+    background: transparent;
+}
+.input-rounded{
+    border-radius: 2rem;
+    height: 4rem;
+    border: 2px solid var(--cyan);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--grey700);
+    font-size: 1.75rem;
+}
+.pharmacy-signup .sign-in input{
+    border: 2px solid var(--cyan);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--grey700);
+    font-size: 1.55rem;
+    border-radius: 0px;
+}
+.pharmacy-signup h1 {
+    font-size: 3.875rem;
+    color: var(--darkBlue);
+    font-weight: 600;
+}.pharmacy-signup h1 span{
+    font-size: 4.75rem;
+    font-weight: 900;
+}.pharmacy-signup h2 {
+    font-size: 3.875rem;
+    color: #04635A;
+    font-weight: 600;
+}.pharmacy-signup h2 span{
+    font-size: 4.75rem;
+    font-weight: 900;
+}
+.sign-in .arrow{
+    height: 40px;
+}
+.pharmacy-desc{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.btn-rounded{
+    background: rgb(0,211,182);
+    background: linear-gradient(90deg, rgba(0,211,182,1) 0%, rgba(0,193,203,1) 100%);
+    border-radius: 40px;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: none;
+}
+a.btn-rounded{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-rounded:hover{
+    color: white;    
+}
+.btnsm{
+    font-size: 1.5125rem;
+    font-weight: 600;
+}
+.btnlg{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.btnShadow{
+    box-shadow: 8px 9px 14px 2px rgb(0 208 185 / 37%);
+}
+
+/**delivery-wrapper**/
+.delivery-wrapper .top-bar{
+    height: 70px;
+    background-color: #01a99c;
+
+}
+.top-bar .logo{
+    width: 150px;
+}
+.delivery-date{
+    font-weight: 700;
+    color: #000;
+    margin: 2rem 0rem;
+}
+.delivery-date span{
+    font-weight: 500;
+    color: var(--blue);
+    font-style: italic;   
+}
+.delivery-wrapper .top-bar input[type=file] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+.delivery-wrapper .top-bar  input[type=file] + label {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    font-size: 1rem;
+    border: 1px solid #fff;
+}
+.delivery-wrapper .tag{
+    background: gray;
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.4rem;
+    border-radius: 1rem;
+}
+.top-bar .add-btn{
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #fff;
+}
+.delivery-form input[type=text],.delivery-form textarea{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    border: 2px solid black;
+    margin-bottom: .2rem;
+    padding: .5rem;
+}
+.confirm-text{
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--grey500);
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+.delivery-form label{
+    font-weight: 700;
+    font-style: italic;
+}
+.delivery-form .btn-success{
+    background: #01a99c !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.shipping-wrapper .shipping-header p{
+    color: var(--grey500);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.shipping-wrapper .search-by{
+    background: white;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 60%);
+    padding: .5rem 1rem;
+    font-weight: 700;
+    color: var(--grey700);
+}
+.shipping-wrapper .shipping-card{
+    background: white;
+    padding: .5rem;
+    border: 1px solid var(--darkBlue);
+}
+.shipping-wrapper .shipping-card p{
+    font-weight: 700;
+}
+
+.shipping-wrapper .shipping-card p span{
+    font-weight: 500;
+}
+.shipping-wrapper .shipping-card h6{
+    font-weight: 700;
+}
+.shipping-wrapper .shipping-card .shipping-details p{
+    color: var(--grey500);
+    font-weight: 500;
+}
+.shipping-wrapper nav ul li{
+    position: relative;
+}
+.shipping-wrapper nav ul li .imp{
+    display:none;
+    position: absolute;
+    padding-top:5px;
+    left: 5px;
+}
+.shipping-wrapper nav ul li .imp .imp-row{
+    width: 150px;
+    padding: .2rem;
+    border-radius: .5rem;
+    background: rgb(0,211,182);
+    margin-bottom: 3px;
+    background: linear-gradient(90deg, rgba(0,211,182,1) 0%, rgba(0,193,203,1) 100%);
+}
+.shipping-wrapper nav ul li .imp p{
+    color: var(--grey700);
+    font-size: .850rem;
+    font-weight: 600;
+}
+.shipping-wrapper nav ul li .imp span{
+    color: var(--grey700);
+    font-size: .750rem;
+      display: block;
+}
+.shipping-wrapper nav ul li:hover .imp{
+    display:block;
+}
+.shipping-wrapper input[type=file] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+/* .shipping-wrapper input[type=file] + label {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    font-size: 1rem;
+    border: 1px solid #fff;
+} */
+@media (max-width: 1399.98px) {
+    body,html{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1199.98px) {
+    body,html{
+        font-size: 14px;
+    }
+    .top-navigation nav ul li a {
+        font-size: 1.3rem;
+    }
+    .top-navigation nav ul {
+        gap:2rem;
+    }
+    .pharmacy-signup h1 {
+        font-size: 3rem;
+    
+    }
+    .pharmacy-signup h1 span {
+        font-size: 3.5rem;
+    }
+    .pharmacy-signup h2 {
+        font-size: 3rem;
+    
+    }
+    .pharmacy-signup h2 span {
+        font-size: 3.5rem;
+    }
+    .pharmacy-desc{
+        font-size: 1.3rem;
+    }
+ }
+    @media (max-width: 991.98px) {
+        body,html{
+            font-size: 13px;
+        }
+        .btnlg {
+            font-size: 1.7rem;
+        }
+        
+.top-navigation nav ul li a {
+    font-size: 1rem;
+}
+.top-navigation nav ul {
+    gap:1.5rem;
+}
+.top-navigation .logo {
+    width: 150px;
+}
+.auth-wrapper .welcome p {
+    font-size: 1.5rem;
+
+}
+.pharmacy-signup h1 {
+    font-size: 2.5rem;
+
+}
+.pharmacy-signup h1 span {
+    font-size: 3rem;
+}
+.pharmacy-signup h2 {
+    font-size: 2.5rem;
+
+}
+.pharmacy-signup h2 span {
+    font-size: 3rem;
+}
+.sign-in .arrow {
+    height: 50px;
+}
+.pharmacy-desc{
+    font-size: 1.2rem;
+}
+    }
+    @media (max-width: 767.98px) { 
+        body,html{
+            font-size: 12px;
+        }
+        .btnlg {
+            font-size: 1.3rem;
+        }
+        .top-navigation nav ul li a {
+            font-size: .90rem;
+        }
+        .top-navigation nav {
+            gap: 2rem;
+        }
+        .top-navigation nav ul {
+            gap:1.5rem;
+        }
+        .top-navigation nav ul li a {
+            padding: 0.5rem .5rem
+        }
+        .auth-wrapper .welcome h1 {
+            font-size: 4rem;
+        }
+        .auth-wrapper .welcome p {
+            font-size: 1.2rem;
+        }
+        .sign-in .arrow {
+            height: 40px;
+        }
+    }
+    @media (max-width: 575.98px) {
+        body,html{
+            font-size: 11px;
+        }
+        .btnlg {
+            font-size: 1.7rem;
+        }
+        .top-navigation nav {
+            gap: 1.2rem;
+        }
+        .top-navigation nav ul li a {
+            padding: 0.5rem 1rem;
+        }
+        .top-navigation nav ul {
+            gap:1rem;
+        }
+        .main_bg.pharmacy-signup-bg{
+    height: auto;
+    padding-bottom: 20px;
+}
+.delivery-wrapper .logo {
+    position: static !important;
+}
+    }
+    @media (min-width:768px) {
+        .shipping-wrapper nav ul li .imp .imp-row {
+            width: 230px;}
+    }
