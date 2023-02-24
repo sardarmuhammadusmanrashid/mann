@@ -1,0 +1,50 @@
+.logo{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+.dd{
+    margin-left:100px;
+}
+.search{
+transform: translateY(-30px);
+margin-left: 110px;
+text-indent: 0cm;
+
+}
+icon-input{
+    margin-top: 40px;
+}
+.big{
+    font-size: 28px;
+    line-height: 34px !important;
+    padding-bottom: 4px;
+}
+
+
+.dd{
+    border-radius: 20px;
+    margin-left: -10px;
+  
+   
+}
+/* .ibcoc-block-content{ */
+       /* background-color: #FFFFFF;
+    background-position: right center;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 288px;
+    align-content: center;
+    align-items: center; */
+/* } */
+
+.dl{
+    margin-top: -120px;
+    background-color: aliceblue;
+    border-radius: 0 100px 100px 0px;
+   
+}

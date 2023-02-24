@@ -1,0 +1,77 @@
+.humburger-items{
+    position: relative;
+
+}
+.humburger-items input[type="checkbox"]{
+    height: 32px;
+    width:40px;
+    position: absolute;
+    /*z-index: 5;*/
+    top:5px;
+    left:5px;
+    /*opacity: 0;*/
+    /*margin-top: -20px;*/
+    z-index: 4;
+    opacity: 0;
+
+    
+}
+
+
+.humburger-items input[type="checkbox"]:checked~.menu-items{
+transform: translateX(0);
+/*display: block;*/
+}
+
+.humberger-line{
+    /*background-color: pink;*/
+    height: 35px;
+    width:40px;
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    z-index: 2;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+/*position: relative;
+    margin-left: 3px;
+    margin-top: -37px;
+    z-index: 2;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
+
+}*/
+.line{
+    display: block;
+    background:black;
+    height: 4px;
+    width:100%;
+    
+}
+.menu-items{
+    transform: translateX(-80%);
+    transition: 0.5s ease-in-out ;
+}
+.dj{
+height: 95vh;
+	padding-top: 50px"
+}
+    
+.jk{
+    margin-left: 160px"
+
+
+    
+
+
+    
+
+
+
+    
+}
